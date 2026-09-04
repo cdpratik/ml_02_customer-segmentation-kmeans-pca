@@ -1,0 +1,130 @@
+{
+    "analysis_date": "2026-09-05T03:31:57.495393",
+    "algorithm": "kmeans",
+    "n_clusters": 5,
+    "features_used": [
+        "Recency",
+        "Frequency",
+        "Monetary",
+        "Avg_Order_Value",
+        "Unique_Products",
+        "Avg_Items_Per_Order",
+        "Customer_Lifespan_Days",
+        "Purchase_Frequency"
+    ],
+    "log_transform_cols": [
+        "Recency",
+        "Frequency",
+        "Monetary",
+        "Avg_Order_Value",
+        "Unique_Products",
+        "Avg_Items_Per_Order",
+        "Customer_Lifespan_Days",
+        "Purchase_Frequency"
+    ],
+    "scaler_type": "robust",
+    "total_customers": 4312,
+    "model_metrics": {
+        "n_clusters": 5,
+        "n_noise": 0,
+        "silhouette": 0.21812805433695706,
+        "calinski_harabasz": 1249.862039021519,
+        "davies_bouldin": 1.3582746392635943,
+        "min_cluster_size": 341,
+        "min_cluster_pct": 7.908163265306123
+    },
+    "segments": {
+        "At Risk": {
+            "count": 1112,
+            "customer_share_pct": 25.8,
+            "revenue_share_pct": 4.5,
+            "avg_recency": 144.14,
+            "avg_frequency": 1.08,
+            "avg_monetary": 356.81,
+            "total_revenue": 396770.11
+        },
+        "Champions": {
+            "count": 1020,
+            "customer_share_pct": 23.7,
+            "revenue_share_pct": 59.5,
+            "avg_recency": 26.63,
+            "avg_frequency": 10.72,
+            "avg_monetary": 5134.41,
+            "total_revenue": 5237096.77
+        },
+        "Hibernating / Low Value": {
+            "count": 428,
+            "customer_share_pct": 9.9,
+            "revenue_share_pct": 0.8,
+            "avg_recency": 163.82,
+            "avg_frequency": 1.47,
+            "avg_monetary": 173.48,
+            "total_revenue": 74249.61
+        },
+        "Loyal High Value": {
+            "count": 1411,
+            "customer_share_pct": 32.7,
+            "revenue_share_pct": 13.3,
+            "avg_recency": 74.9,
+            "avg_frequency": 3.31,
+            "avg_monetary": 826.8,
+            "total_revenue": 1166607.75
+        },
+        "Potential Loyalists": {
+            "count": 341,
+            "customer_share_pct": 7.9,
+            "revenue_share_pct": 21.9,
+            "avg_recency": 87.65,
+            "avg_frequency": 5.23,
+            "avg_monetary": 5640.79,
+            "total_revenue": 1923509.5
+        }
+    },
+    "recommendations": [
+        {
+            "Segment": "At Risk",
+            "Customers": 1112,
+            "Customer_Share_%": 25.8,
+            "Revenue_Share_%": 4.5,
+            "Profile": "Previously valuable customers showing signs of inactivity.",
+            "Business_Goal": "Win back before churn.",
+            "Recommended_Actions": "Win-back email campaigns; Personalized discount codes; Reminder campaigns; Feedback or satisfaction surveys"
+        },
+        {
+            "Segment": "Champions",
+            "Customers": 1020,
+            "Customer_Share_%": 23.7,
+            "Revenue_Share_%": 59.5,
+            "Profile": "Best customers with recent purchases, high frequency, and high value.",
+            "Business_Goal": "Retain and reward.",
+            "Recommended_Actions": "VIP loyalty rewards; Early access to new products; Premium bundles; Referral incentives"
+        },
+        {
+            "Segment": "Hibernating / Low Value",
+            "Customers": 428,
+            "Customer_Share_%": 9.9,
+            "Revenue_Share_%": 0.8,
+            "Profile": "Low value and/or inactive customers.",
+            "Business_Goal": "Reactivate efficiently without overspending.",
+            "Recommended_Actions": "Low-cost automated reactivation; Clearance promotions; Preference collection; Suppress from expensive paid campaigns"
+        },
+        {
+            "Segment": "Loyal High Value",
+            "Customers": 1411,
+            "Customer_Share_%": 32.7,
+            "Revenue_Share_%": 13.3,
+            "Profile": "Strong repeat buyers with meaningful revenue contribution.",
+            "Business_Goal": "Increase basket size and keep engagement high.",
+            "Recommended_Actions": "Cross-sell related categories; Personalized recommendations; Tiered discounts; Subscription or membership offers"
+        },
+        {
+            "Segment": "Potential Loyalists",
+            "Customers": 341,
+            "Customer_Share_%": 7.9,
+            "Revenue_Share_%": 21.9,
+            "Profile": "Promising customers who can become high-value with nurturing.",
+            "Business_Goal": "Increase repeat purchase frequency.",
+            "Recommended_Actions": "Second-purchase campaigns; Product education emails; Limited-time incentives; Personalized product suggestions"
+        }
+    ]
+}
