@@ -1,0 +1,73 @@
+{
+    "generated_at": "2026-09-04T22:03:20.248849",
+    "dataset_shape": {
+        "rows": 525461,
+        "columns": 8
+    },
+    "schema_validation": {
+        "is_valid": true,
+        "issues": []
+    },
+    "data_quality_issues": {
+        "missing_customer_id": {
+            "count": 107927,
+            "percentage": 20.54,
+            "severity": "HIGH"
+        },
+        "cancelled_transactions": {
+            "count": 10206,
+            "percentage": 1.94,
+            "severity": "MEDIUM"
+        },
+        "negative_quantities": {
+            "count": 12326,
+            "percentage": 2.35,
+            "severity": "MEDIUM",
+            "note": "Likely represents returns or corrections"
+        },
+        "zero_quantities": {
+            "count": 0,
+            "percentage": 0.0,
+            "severity": "LOW"
+        },
+        "invalid_prices": {
+            "count": 3690,
+            "percentage": 0.7,
+            "severity": "HIGH"
+        },
+        "missing_descriptions": {
+            "count": 2928,
+            "percentage": 0.56,
+            "severity": "LOW"
+        },
+        "duplicate_records": {
+            "count": 6865,
+            "percentage": 1.31,
+            "severity": "MEDIUM"
+        },
+        "total_missing_values": {
+            "count": 110855,
+            "percentage": 2.64,
+            "severity": "INFO"
+        }
+    },
+    "date_validation": {
+        "min_date": "2009-12-01 07:45:00",
+        "max_date": "2010-12-09 20:01:00",
+        "range_days": 373,
+        "range_months": 12.4,
+        "range_years": 1.0
+    },
+    "referential_integrity": {
+        "invoice_customer_relationship": {
+            "total_invoices": 28816,
+            "multi_customer_invoices": 0,
+            "is_valid": "True"
+        },
+        "stockcode_description_relationship": {
+            "total_products": 4632,
+            "products_with_multiple_descriptions": 687,
+            "is_consistent": "False"
+        }
+    }
+}

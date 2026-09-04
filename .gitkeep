@@ -1,0 +1,2 @@
+# Create .gitkeep files
+New-Item -ItemType File -Path data\raw\.gitkeep, data\processed\.gitkeep, data\external\.gitkeep, reports\.gitkeep, reports\figures\.gitkeep, models\.gitkeep -Force

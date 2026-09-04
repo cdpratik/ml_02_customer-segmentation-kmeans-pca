@@ -1,0 +1,23 @@
+{
+    "dataset_name": "Online Retail II (2009-2010)",
+    "analysis_date": "2026-09-04T22:03:32.711209",
+    "total_records": 525461,
+    "total_columns": 8,
+    "date_range": {
+        "start": "2009-12-01 07:45:00",
+        "end": "2010-12-09 20:01:00",
+        "days": 373
+    },
+    "unique_counts": {
+        "customers": 4383,
+        "products": 4632,
+        "invoices": 28816,
+        "countries": 40
+    },
+    "data_quality": {
+        "missing_customer_id": 107927,
+        "negative_quantities": 12326,
+        "invalid_prices": 3690,
+        "duplicates": 6865
+    }
+}
