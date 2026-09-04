@@ -1,0 +1,60 @@
+{
+    "analysis_date": "2026-09-05T03:24:36.378367",
+    "algorithm": "KMeans",
+    "optimal_k": 4,
+    "features_used": [
+        "Recency",
+        "Frequency",
+        "Monetary"
+    ],
+    "total_customers": 4312,
+    "evaluation_metrics": {
+        "silhouette": 0.6107948209557895,
+        "calinski_harabasz": 3742.2190887565785,
+        "davies_bouldin": 0.6156972092342043,
+        "inertia": 3587.352269496303
+    },
+    "optimal_k_recommendations": {
+        "silhouette": 2,
+        "calinski_harabasz": 8,
+        "davies_bouldin": 2
+    },
+    "clusters": {
+        "0": {
+            "label": "At Risk",
+            "count": 3204,
+            "avg_recency": 43.03,
+            "avg_frequency": 4.46,
+            "avg_monetary": 1710.65,
+            "total_revenue": 5480922.7,
+            "revenue_share_pct": 62.3
+        },
+        "1": {
+            "label": "Lost/Low Value",
+            "count": 1047,
+            "avg_recency": 242.98,
+            "avg_frequency": 1.66,
+            "avg_monetary": 593.54,
+            "total_revenue": 621436.71,
+            "revenue_share_pct": 7.1
+        },
+        "2": {
+            "label": "Champions",
+            "count": 5,
+            "avg_recency": 5.6,
+            "avg_frequency": 113.6,
+            "avg_monetary": 215535.0,
+            "total_revenue": 1077675.0,
+            "revenue_share_pct": 12.2
+        },
+        "3": {
+            "label": "Loyal Customers",
+            "count": 56,
+            "avg_recency": 14.91,
+            "avg_frequency": 47.02,
+            "avg_monetary": 28896.42,
+            "total_revenue": 1618199.33,
+            "revenue_share_pct": 18.4
+        }
+    }
+}
