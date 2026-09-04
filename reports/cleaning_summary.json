@@ -1,14 +1,30 @@
 {
+    "cleaning_date": "2026-09-05T02:33:56.767808",
     "input_file": "data/raw/online_retail_II.xlsx",
     "output_file": "data/processed/cleaned_transactions.csv",
-    "original_rows": 525461,
-    "cleaned_rows": 400916,
+    "original_shape": {
+        "rows": 525461,
+        "columns": 8
+    },
+    "cleaned_shape": {
+        "rows": 400916,
+        "columns": 9
+    },
     "rows_removed": 124545,
-    "retention_rate": 76.3,
+    "retention_percentage": 76.3,
+    "new_features": [
+        "Revenue"
+    ],
     "validation_passed": true,
-    "unique_customers": 4312,
-    "unique_products": 4017,
-    "unique_invoices": 19213,
-    "unique_countries": 37,
-    "total_revenue": 8798233.743999999
+    "statistics": {
+        "unique_customers": 4312,
+        "unique_products": 4017,
+        "unique_invoices": 19213,
+        "total_revenue": 8798233.743999999,
+        "date_range": {
+            "start": "2009-12-01 07:45:00",
+            "end": "2010-12-09 20:01:00",
+            "days": 373
+        }
+    }
 }
