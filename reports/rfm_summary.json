@@ -1,0 +1,55 @@
+{
+    "analysis_date": "2026-09-05T03:12:46.639639",
+    "total_customers": 4312,
+    "rfm_statistics": {
+        "recency": {
+            "mean": 91.17184601113172,
+            "median": 53.0,
+            "std": 96.86063334657742,
+            "min": 1.0,
+            "max": 374.0
+        },
+        "frequency": {
+            "mean": 4.455705009276437,
+            "median": 2.0,
+            "std": 8.170213389965513,
+            "min": 1.0,
+            "max": 205.0
+        },
+        "monetary": {
+            "mean": 2040.4067124304265,
+            "median": 701.615,
+            "std": 8911.755977232933,
+            "min": 2.95,
+            "max": 349164.35
+        }
+    },
+    "segment_preview": {
+        "Low Value": 1246,
+        "Medium Value": 1131,
+        "High Value": 1029,
+        "VIP": 906
+    },
+    "total_features": 19,
+    "features_list": [
+        "Customer ID",
+        "Recency",
+        "Frequency",
+        "Monetary",
+        "R_Score",
+        "F_Score",
+        "M_Score",
+        "RFM_Score",
+        "RFM_Total",
+        "Total_Items",
+        "Total_Orders",
+        "Avg_Order_Value",
+        "Unique_Products",
+        "First_Purchase",
+        "Last_Purchase",
+        "Avg_Items_Per_Order",
+        "Customer_Lifespan_Days",
+        "Purchase_Frequency",
+        "Segment_Preview"
+    ]
+}
