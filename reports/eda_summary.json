@@ -1,0 +1,31 @@
+{
+    "analysis_date": "2026-09-05T02:47:15.545564",
+    "dataset": {
+        "total_transactions": 400916,
+        "total_customers": 4312,
+        "total_products": 4017,
+        "total_countries": 37,
+        "date_range_days": 373
+    },
+    "revenue": {
+        "total": 8798233.743999999,
+        "mean": 21.94532955531832,
+        "median": 12.5,
+        "std": 77.75807455845008
+    },
+    "customer_insights": {
+        "avg_orders_per_customer": 4.455705009276437,
+        "avg_revenue_per_customer": 2040.4067124304265,
+        "avg_order_value": 376.37336360457886,
+        "top_customer_revenue": 349164.35
+    },
+    "geographic": {
+        "uk_revenue_percentage": 83.89916257946601,
+        "top_country": "United Kingdom",
+        "top_country_revenue": 7381644.433
+    },
+    "temporal": {
+        "peak_month": "2010-11",
+        "peak_month_revenue": 1166460.022
+    }
+}
