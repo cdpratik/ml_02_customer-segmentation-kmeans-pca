@@ -1,0 +1,48 @@
+{
+    "initial_shape": [
+        525461,
+        8
+    ],
+    "final_shape": [
+        400916,
+        9
+    ],
+    "steps": [
+        {
+            "step": "Remove missing Customer ID",
+            "rows_before": 525461,
+            "rows_after": 417534,
+            "rows_removed": 107927
+        },
+        {
+            "step": "Remove cancelled transactions",
+            "rows_before": 417534,
+            "rows_after": 407695,
+            "rows_removed": 9839
+        },
+        {
+            "step": "Remove invalid quantities",
+            "rows_before": 407695,
+            "rows_after": 407695,
+            "rows_removed": 0
+        },
+        {
+            "step": "Remove invalid prices",
+            "rows_before": 407695,
+            "rows_after": 407664,
+            "rows_removed": 31
+        },
+        {
+            "step": "Remove duplicates",
+            "rows_before": 407664,
+            "rows_after": 400916,
+            "rows_removed": 6748
+        }
+    ],
+    "summary": {
+        "initial_rows": 525461,
+        "final_rows": 400916,
+        "rows_removed": 124545,
+        "retention_percentage": 76.3
+    }
+}

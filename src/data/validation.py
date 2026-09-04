@@ -406,7 +406,6 @@ def generate_validation_report(df: pd.DataFrame,
     
     return report
 
-
 if __name__ == "__main__":
     print("Data validation module loaded successfully!")
     print("\nAvailable functions:")
